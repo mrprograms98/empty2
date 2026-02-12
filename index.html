@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Klus - Luxe Klusdiensten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- LUXE PRELOADER -->
+    <!--<!--<div class="preloader-overlay" id="preloader">
+        <div class="preloader-container">
+            <div class="preloader-content">
+                <div class="logo-loader">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#d4af37" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="#c9a961" stroke-width="1" opacity="0.5"/>
+                        <text x="50" y="55" text-anchor="middle" font-size="24" font-weight="bold" fill="#d4af37">✨</text>
+                    </svg>
+                </div>
+                <h1 class="preloader-title">ELITE KLUS</h1>
+                <p class="preloader-subtitle">Luxe Vakmanschap</p>
+                
+                <div class="loading-bar-container">
+                    <div class="loading-bar"></div>
+                </div>
+                
+                <div class="preloader-text">
+                    <span class="preloader-word">Kwaliteit</span>
+                    <span class="preloader-word">·</span>
+                    <span class="preloader-word">Vakmanschap</span>
+                    <span class="preloader-word">·</span>
+                    <span class="preloader-word">Design</span>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Navigatie -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>✨ ELITE KLUS</h1>
+                <p class="tagline">Luxe Vakmanschap</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link" data-nl="Home" data-en="Home" data-de="Startseite" data-fr="Accueil">Home</a></li>
+                <li><a href="#services" class="nav-link" data-nl="Diensten" data-en="Services" data-de="Dienstleistungen" data-fr="Services">Diensten</a></li>
+                <li><a href="#portfolio" class="nav-link" data-nl="Portfolio" data-en="Portfolio" data-de="Portfolio" data-fr="Portefeuille">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link" data-nl="Contact" data-en="Contact" data-de="Kontakt" data-fr="Contact">Contact</a></li>
+                
+                <!-- Language Selector -->
+                <li class="lang-selector">
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-current">NL</span>
+                        <svg class="lang-icon" viewBox="0 0 24 24">
+                            <path d="M7 10l5 5 5-5z"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option active" data-lang="nl">
+                            <span>🇳🇱</span> Nederlands
+                        </button>
+                        <button class="lang-option" data-lang="en">
+                            <span>🇬🇧</span> English
+                        </button>
+                        <button class="lang-option" data-lang="de">
+                            <span>🇩🇪</span> Deutsch
+                        </button>
+                        <button class="lang-option" data-lang="fr">
+                            <span>🇫🇷</span> Français
+                        </button>
+                        <button class="lang-option" data-lang="es">
+                            <span>🇪🇸</span> Español
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-nl="Sinds 2015 | Premium Kwaliteit" data-en="Since 2015 | Premium Quality" data-de="Seit 2015 | Premium-Qualität" data-fr="Depuis 2015 | Qualité Premium">Sinds 2015 | Premium Kwaliteit</div>
+            <h1 class="hero-title" data-nl="Luxe Klusdiensten<br>Van Wereldklasse" data-en="Luxury Services<br>of World Class" data-de="Luxus-Dienstleistungen<br>Von Weltklasse" data-fr="Services Luxe<br>De Classe Mondiale">Luxe Klusdiensten<br>Van Wereldklasse</h1>
+            <p class="hero-subtitle" data-nl="Transformeer uw ruimte in een masterpiece met onze premium vakmanschap" data-en="Transform your space into a masterpiece with our premium craftsmanship" data-de="Verwandeln Sie Ihren Raum mit unserem Premium-Handwerk in ein Meisterwerk" data-fr="Transformez votre espace en chef-d'œuvre avec notre savoir-faire premium">Transformeer uw ruimte in een masterpiece met onze premium vakmanschap</p>
+            <button class="cta-button" data-nl="Gratis Adviesgesprek" data-en="Free Consultation" data-de="Kostenlose Beratung" data-fr="Consultation Gratuite">
+                <span>Gratis Adviesgesprek</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </button>
+        </div>
+        <div class="hero-image">
+            <div class="hero-frame"></div>
+        </div>
+    </section>
+
+    <!-- Diensten Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-nl="ONZE SPECIALISATIES" data-en="OUR SPECIALITIES" data-de="UNSERE SPEZIALITÄTEN" data-fr="NOS SPÉCIALITÉS">ONZE SPECIALISATIES</span>
+                <h2 data-nl="Uitmuntende Diensten" data-en="Excellent Services" data-de="Hervorragende Dienstleistungen" data-fr="Services Excellents">Uitmuntende Diensten</h2>
+                <p data-nl="Elk project is een meesterwerk" data-en="Every project is a masterpiece" data-de="Jedes Projekt ist ein Meisterwerk" data-fr="Chaque projet est un chef-d'œuvre">Elk project is een meesterwerk</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card premium">
+                    <div class="service-glow"></div>
+                    <div class="service-icon">🔨</div>
+                    <h3 data-nl="Timmerwerk Premium" data-en="Premium Carpentry" data-de="Premium-Zimmerei" data-fr="Menuiserie Premium">Timmerwerk Premium</h3>
+                    <p data-nl="Ambachtelijk timmerwerk met echte houtsoorten. Maatwerk kasten, deuren en interieurontwerpen" data-en="Craftsmanship carpentry with real wood types. Custom cabinets, doors and interior designs" data-de="Handwerkliche Zimmerei mit echten Holzarten. Maßgefertigte Schränke, Türen und Innenräume" data-fr="Menuiserie artisanale avec bois véritable. Armoires personnalisées, portes et intérieurs">Ambachtelijk timmerwerk met echte houtsoorten</p>
+                    <a href="#" class="service-link">Meer Info →</a>
+                </div>
+                <div class="service-card premium">
+                    <div class="service-glow"></div>
+                    <div class="service-icon">⚡</div>
+                    <h3 data-nl="Elektriciteit Deluxe" data-en="Deluxe Electrical" data-de="Deluxe Elektrik" data-fr="Électricité Deluxe">Elektriciteit Deluxe</h3>
+                    <p data-nl="Domotica systemen, designverlichting en veilige hoogwaardige installaties" data-en="Domotics systems, design lighting and safe high-quality installations" data-de="Hausautomationssysteme, Designbeleuchtung und sichere hochwertige Installationen" data-fr="Systèmes domotiques, éclairage design et installations sécurisées de haute qualité">Domotica systemen, designverlichting</p>
+                    <a href="#" class="service-link">Meer Info →</a>
+                </div>
+                <div class="service-card premium">
+                    <div class="service-glow"></div>
+                    <div class="service-icon">💎</div>
+                    <h3 data-nl="Loodgieterwerk Luxe" data-en="Luxury Plumbing" data-de="Luxus-Klempnerei" data-fr="Plomberie Luxe">Loodgieterwerk Luxe</h3>
+                    <p data-nl="Designer sanitaire installaties, spa-badkamers en premium leidingwerk" data-en="Designer sanitary installations, spa bathrooms and premium plumbing" data-de="Designer-Sanitärinstallationen, Spa-Badezimmer und Premium-Rohrleitungen" data-fr="Installations sanitaires design, salles de bain spa et tuyauterie premium">Designer sanitaire installaties</p>
+                    <a href="#" class="service-link">Meer Info →</a>
+                </div>
+                <div class="service-card premium">
+                    <div class="service-glow"></div>
+                    <div class="service-icon">🎨</div>
+                    <h3 data-nl="Schilderwerk Haute" data-en="Haute Painting" data-de="Hochwertige Malerei" data-fr="Peinture Haute">Schilderwerk Haute</h3>
+                    <p data-nl="Premium verfwerk met luxe afwerkingen. Binnenlandse muren tot decoratieve buitenkant" data-en="Premium painting with luxury finishes. Interior walls to decorative exterior" data-de="Premium-Anstrich mit luxuriösen Oberflächen. Innenwände bis dekorative Außenwand" data-fr="Peinture premium avec finitions luxueuses. Murs intérieurs à extérieur décoratif">Premium verfwerk met luxe afwerkingen</p>
+                    <a href="#" class="service-link">Meer Info →</a>
+                </div>
+                <div class="service-card premium">
+                    <div class="service-glow"></div>
+                    <div class="service-icon">🏛️</div>
+                    <h3 data-nl="Metselwerk Exclusief" data-en="Exclusive Masonry" data-de="Exklusive Maurerei" data-fr="Maçonnerie Exclusive">Metselwerk Exclusief</h3>
+                    <p data-nl="Verfijnde metselbouw, decoratieve steenwerk en architecturale details" data-en="Refined masonry, decorative stonework and architectural details" data-de="Verfeinerte Maurerei, dekorativer Steinbau und architektonische Details" data-fr="Maçonnerie raffinée, travail de pierre décoratif et détails architecturaux">Verfijnde metselbouw en decoratieve steenwerk</p>
+                    <a href="#" class="service-link">Meer Info →</a>
+                </div>
+                <div class="service-card premium">
+                    <div class="service-glow"></div>
+                    <div class="service-icon">🪟</div>
+                    <h3 data-nl="Raam & Deur Prestige" data-en="Window & Door Prestige" data-de="Fenster & Tür Prestige" data-fr="Fenêtre & Porte Prestige">Raam & Deur Prestige</h3>
+                    <p data-nl="Designer ramen en deuren. Isolatie, veiligheid en esthetiek in perfectie" data-en="Designer windows and doors. Insulation, safety and aesthetics in perfection" data-de="Designer-Fenster und Türen. Isolierung, Sicherheit und Ästhetik in Perfektion" data-fr="Fenêtres et portes design. Isolation, sécurité et esthétique en perfection">Designer ramen en deuren in perfectie</p>
+                    <a href="#" class="service-link">Meer Info →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-nl="ONS WERK" data-en="OUR WORK" data-de="UNSERE ARBEIT" data-fr="NOTRE TRAVAIL">ONS WERK</span>
+                <h2 data-nl="Voltooide Meesterwerken" data-en="Completed Masterpieces" data-de="Abgeschlossene Meisterwerke" data-fr="Chefs-d'œuvre Terminés">Voltooide Meesterwerken</h2>
+                <p data-nl="Projecten die spreken voor zich" data-en="Projects that speak for themselves" data-de="Projekte, die für sich selbst sprechen" data-fr="Projets qui parlent d'eux-mêmes">Projecten die spreken voor zich</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image featured">
+                        <div class="portfolio-overlay">
+                            <h3 data-nl="Penthouse Keuken" data-en="Penthouse Kitchen" data-de="Penthouse-Küche" data-fr="Cuisine Penthouse">Penthouse Keuken</h3>
+                            <p>Amsterdam - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 data-nl="Spa Badkamer" data-en="Spa Bathroom" data-de="Spa-Badezimmer" data-fr="Salle de Bain Spa">Spa Badkamer</h3>
+                            <p>Utrecht - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 data-nl="Villa Renovatie" data-en="Villa Renovation" data-de="Villa-Renovierung" data-fr="Rénovation Villa">Villa Renovatie</h3>
+                            <p>Gooi & Vechtstreek - 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 data-nl="Designkantoor" data-en="Design Office" data-de="Design-Büro" data-fr="Bureau Design">Designkantoor</h3>
+                            <p>Rotterdam - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 data-nl="Luxe Slaapkamer" data-en="Luxury Bedroom" data-de="Luxus-Schlafzimmer" data-fr="Chambre Luxe">Luxe Slaapkamer</h3>
+                            <p>Den Haag - 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 data-nl="Moderne Woonkamer" data-en="Modern Living Room" data-de="Modernes Wohnzimmer" data-fr="Salon Moderne">Moderne Woonkamer</h3>
+                            <p>Eindhoven - 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <div class="stat-number" data-target="2500">0</div>
+                <p data-nl="Projecten Voltooid" data-en="Projects Completed" data-de="Projekte Abgeschlossen" data-fr="Projets Terminés">Projecten Voltooid</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="98">0</div>
+                <p data-nl="% Tevreden Klanten" data-en="% Satisfied Customers" data-de="% Zufriedene Kunden" data-fr="% Clients Satisfaits">% Tevreden Klanten</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="15">0</div>
+                <p data-nl="Jaar Ervaring" data-en="Years Experience" data-de="Jahre Erfahrung" data-fr="Ans d'Expérience">Jaar Ervaring</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="25">0</div>
+                <p data-nl="Vakspecialisten" data-en="Craft Specialists" data-de="Handwerksspezialisten" data-fr="Spécialistes Métier">Vakspecialisten</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-nl="CONTACT" data-en="CONTACT" data-de="KONTAKT" data-fr="CONTACT">CONTACT</span>
+                <h2 data-nl="Laten We Spreken" data-en="Let's Talk" data-de="Lassen Sie Uns Sprechen" data-fr="Parlons">Laten We Spreken</h2>
+                <p data-nl="Uw droom project verdient premium aandacht" data-en="Your dream project deserves premium attention" data-de="Ihr Traumproject verdient Premium-Aufmerksamkeit" data-fr="Votre projet de rêve mérite une attention premium">Uw droom project verdient premium aandacht</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info-box">
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3 data-nl="Telefoon" data-en="Phone" data-de="Telefon" data-fr="Téléphone">Telefoon</h3>
+                        <p>+31 6 123 456 78</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3 data-nl="Email" data-en="Email" data-de="E-Mail" data-fr="Email">Email</h3>
+                        <p>info@eliteklus.nl</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3 data-nl="Adres" data-en="Address" data-de="Adresse" data-fr="Adresse">Adres</h3>
+                        <p>Luxestraat 123, Amsterdam</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Uw Naam" required>
+                        <span class="underline"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Uw Email" required>
+                        <span class="underline"></span>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Selecteer Dienst</option>
+                            <option value="timmerwerk">Timmerwerk</option>
+                            <option value="elektriciteit">Elektriciteit</option>
+                            <option value="loodgieter">Loodgieterwerk</option>
+                            <option value="schilderwerk">Schilderwerk</option>
+                        </select>
+                        <span class="underline"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Beschrijf Uw Project" rows="5" required></textarea>
+                        <span class="underline"></span>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span data-nl="Offerte Aanvragen" data-en="Request Quote" data-de="Angebot Anfordern" data-fr="Demander un Devis">Offerte Aanvragen</span>
+                        <div class="submit-loader"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Elite Klus</h4>
+                    <p data-nl="Premium klusdiensten voor wie kwaliteit waardeert." data-en="Premium services for those who value quality." data-de="Premium-Dienstleistungen für Qualitätsbewusste." data-fr="Services premium pour ceux qui apprécient la qualité.">Premium klusdiensten voor wie kwaliteit waardeert.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-nl="Snelle Links" data-en="Quick Links" data-de="Schnelllinks" data-fr="Liens Rapides">Snelle Links</h4>
+                    <ul>
+                        <li><a href="#home" data-nl="Home" data-en="Home" data-de="Startseite" data-fr="Accueil">Home</a></li>
+                        <li><a href="#services" data-nl="Diensten" data-en="Services" data-de="Dienstleistungen" data-fr="Services">Diensten</a></li>
+                        <li><a href="#portfolio" data-nl="Portfolio" data-en="Portfolio" data-de="Portfolio" data-fr="Portefeuille">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h4 data-nl="Volg Ons" data-en="Follow Us" data-de="Folgen Sie Uns" data-fr="Nous Suivre">Volg Ons</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">ig</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elite Klus. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
