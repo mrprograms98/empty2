@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olive Tree - Premium Navigation</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -53,11 +53,11 @@
                 <!-- Language Switcher Desktop -->
                 <div class="language-switcher-desktop">
                     <button class="lang-btn-desktop active" data-lang="nl" title="Nederlands">
-                        <span>NL</span>
+                        <span>NL<img src="https://flagcdn.com/nl.svg" width="30" alt="NL"></span>
                     </button>
                     <span class="lang-divider">|</span>
                     <button class="lang-btn-desktop" data-lang="en" title="English">
-                        <span>EN</span>
+                        <span>EN<img src="https://flagcdn.com/gb.svg" width="30" alt="EN"></span>
                     </button>
                     <span class="lang-divider">|</span>
                     <button class="lang-btn-desktop" data-lang="de" title="Deutsch">
@@ -136,11 +136,11 @@
             <div class="mobile-lang-buttons">
                 <button class="mobile-lang-btn active" data-lang="nl">
                     <span class="lang-emoji">🇳🇱</span>
-                    <span class="lang-label">Nederlands</span>
+                    <span class="lang-label"><img src="https://flagcdn.com/nl.svg" width="30" alt="NL"></span>
                 </button>
                 <button class="mobile-lang-btn" data-lang="en">
                     <span class="lang-emoji">🇬🇧</span>
-                    <span class="lang-label">English</span>
+                    <span class="lang-label"><img src="https://flagcdn.com/gb.svg" width="30" alt="EN"></span>
                 </button>
                 <button class="mobile-lang-btn" data-lang="de">
                     <span class="lang-emoji">🇩🇪</span>
@@ -172,12 +172,39 @@
     </div>
 
     <!-- DEMO CONTENT SECTIONS -->
-    <section id="home" class="demo-section hero-section">
-        <div class="demo-inner">
-            <h2>Home</h2>
-            <p>Welkom bij Olive Tree Psychologie Praktijk</p>
+
+<section id="home" class="hero-premium">
+
+    <!-- LEFT IMAGE -->
+    <div class="hero-side hero-left">
+        <img src="https://www.psychologiepraktijktilburg.nl/uploads/1/1/7/4/11744765/published/kantoor-praktijk.jpg?1705402372" alt="Praktijk sfeer">
+    </div>
+
+    <!-- CENTER CONTENT -->
+    <div class="hero-center">
+
+        <div class="hero-logo">
+            <div class="hero-logo-icon">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <h1>Olive Tree</h1>
+            <p>Psychologie Praktijk</p>
         </div>
-    </section>
+
+        <div class="hero-buttons">
+            <a href="contact.html" class="btn-primary">Plan Intake</a>
+            <a href="diensten.html" class="btn-secondary">Bekijk Diensten</a>
+        </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="hero-side hero-right">
+        <img src="https://www.cesar-hemon.nl/wp/wp-content/uploads/2021/06/Foto-wachtkamer-3-1024x768.jpg" alt="Therapie ruimte">
+    </div>
+
+</section>
+
 
     <section id="about" class="demo-section">
         <div class="demo-inner">
