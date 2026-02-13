@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olive Tree - Premium Navigation</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -53,11 +53,11 @@
                 <!-- Language Switcher Desktop -->
                 <div class="language-switcher-desktop">
                     <button class="lang-btn-desktop active" data-lang="nl" title="Nederlands">
-                        <span>NL</span>
+                        <span>NL<img src="https://flagcdn.com/nl.svg" width="30" alt="NL"></span>
                     </button>
                     <span class="lang-divider">|</span>
                     <button class="lang-btn-desktop" data-lang="en" title="English">
-                        <span>EN</span>
+                        <span>EN<img src="https://flagcdn.com/gb.svg" width="30" alt="EN"></span>
                     </button>
                     <span class="lang-divider">|</span>
                     <button class="lang-btn-desktop" data-lang="de" title="Deutsch">
@@ -136,11 +136,11 @@
             <div class="mobile-lang-buttons">
                 <button class="mobile-lang-btn active" data-lang="nl">
                     <span class="lang-emoji">🇳🇱</span>
-                    <span class="lang-label">Nederlands</span>
+                    <span class="lang-label"><img src="https://flagcdn.com/nl.svg" width="30" alt="NL"></span>
                 </button>
                 <button class="mobile-lang-btn" data-lang="en">
                     <span class="lang-emoji">🇬🇧</span>
-                    <span class="lang-label">English</span>
+                    <span class="lang-label"><img src="https://flagcdn.com/gb.svg" width="30" alt="EN"></span>
                 </button>
                 <button class="mobile-lang-btn" data-lang="de">
                     <span class="lang-emoji">🇩🇪</span>
@@ -171,11 +171,38 @@
         </div>
     </div>
 
-    <section class="contact-hero">
-    <div class="contact-hero-inner">
-        <h1>Contact & Intake</h1>
-        <p>Plan uw eerste gesprek of stel uw vraag via onderstaand formulier</p>
+    <!-- DEMO CONTENT SECTIONS -->
+
+<section id="home" class="hero-premium">
+
+    <!-- LEFT IMAGE -->
+    <div class="hero-side hero-left">
+        <img src="https://www.psychologiepraktijktilburg.nl/uploads/1/1/7/4/11744765/published/kantoor-praktijk.jpg?1705402372" alt="Praktijk sfeer">
     </div>
+
+    <!-- CENTER CONTENT -->
+    <div class="hero-center">
+
+        <div class="hero-logo">
+            <div class="hero-logo-icon">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <h1>Olive Tree</h1>
+            <p>Psychologie Praktijk</p>
+        </div>
+
+        <div class="hero-buttons">
+            <a href="contact.html" class="btn-primary">Plan Intake</a>
+            <a href="diensten.html" class="btn-secondary">Bekijk Diensten</a>
+        </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="hero-side hero-right">
+        <img src="https://www.cesar-hemon.nl/wp/wp-content/uploads/2021/06/Foto-wachtkamer-3-1024x768.jpg" alt="Therapie ruimte">
+    </div>
+
 </section>
 
 <section class="contact-layout">
@@ -231,6 +258,14 @@
                 <input type="text" placeholder="Straat + Huisnummer" required>
                 <input type="text" placeholder="Postcode" required>
                 <input type="text" placeholder="Woonplaats" required>
+                <select name="land" required>
+    <option value="">Land *</option>
+    <option value="NL">Nederland</option>
+    <option value="BE">België</option>
+    <option value="DE">Duitsland</option>
+    <option value="OTHER">Anders</option>
+</select>
+
             </div>
 
             <!-- PERSOONLIJK -->
@@ -251,25 +286,41 @@
 
                 <select required>
                     <option value="">Locatievoorkeur</option>
-                    <option>Amsterdam</option>
-                    <option>Online</option>
+                    <option>Eindhoven</option>
+                    <option>Breda</option>
                 </select>
             </div>
 
             <!-- ZORGVERZEKERING -->
             <div class="form-row">
-                <input type="text" placeholder="Naam zorgverzekering" required>
+                <select name="zorgverzekering" required>
+    <option value="">Zorgverzekering *</option>
+    <option value="zilveren_kruis">Zilveren Kruis</option>
+    <option value="cz">CZ</option>
+    <option value="vgz">VGZ</option>
+    <option value="menzis">Menzis</option>
+    <option value="dgs">DSW</option>
+    <option value="ander">Andere</option>
+</select>
+
                 <input type="text" placeholder="Polisnummer" required>
             </div>
 
             <!-- VERWIJZING -->
             <div class="form-group">
-                <label>Heeft u een verwijzing van uw huisarts?</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="verwijzing" required> Ja</label>
-                    <label><input type="radio" name="verwijzing"> Nee</label>
-                </div>
-            </div>
+    <label class="form-label">Verwijzing van huisarts *</label>
+    <div class="radio-group luxury-radio">
+        <label>
+            <input type="radio" name="verwijzing" value="ja" required>
+            <span>Ja, ik heb een geldige verwijzing</span>
+        </label>
+        <label>
+            <input type="radio" name="verwijzing" value="nee">
+            <span>Nee, ik heb (nog) geen verwijzing</span>
+        </label>
+    </div>
+</div>
+
 
             <!-- REDEN -->
             <div class="form-group">
