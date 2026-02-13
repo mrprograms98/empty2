@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olive Tree - Premium Navigation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ULTRA LUXURY PREMIUM NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            
+            <!-- LEFT SECTION: Home & Over Ons -->
+            <div class="navbar-section navbar-left-section">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="overons.html" class="nav-link">Over Ons</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CENTER SECTION: Logo -->
+            <div class="navbar-section navbar-center-section">
+                <a href="#" class="navbar-logo">
+                    <div class="logo-wrapper">
+                        <div class="logo-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="logo-content">
+                            <h1 class="logo-title">Olive Tree</h1>
+                            <p class="logo-subtitle">Psychologie</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- RIGHT SECTION: Diensten, Contact & Language -->
+            <div class="navbar-section navbar-right-section">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="diensten.html" class="nav-link">Diensten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Language Switcher Desktop -->
+                <div class="language-switcher-desktop">
+                    <button class="lang-btn-desktop active" data-lang="nl" title="Nederlands">
+                        <span>NL</span>
+                    </button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn-desktop" data-lang="en" title="English">
+                        <span>EN</span>
+                    </button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn-desktop" data-lang="de" title="Deutsch">
+                        <span>DE</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- HAMBURGER MENU (Mobile) -->
+            <button class="hamburger" id="hamburger" type="button" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <!-- Mobile Menu Header with Logo -->
+        <div class="mobile-menu-header">
+            <div class="mobile-logo">
+                <div class="mobile-logo-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="mobile-logo-text">
+                    <h2>Olive Tree</h2>
+                    <p>Psychologie Praktijk</p>
+                </div>
+            </div>
+            <button class="mobile-menu-close" id="closeMenuBtn" type="button" aria-label="Sluit menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav class="mobile-navigation">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="overons.html" class="mobile-nav-link">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Over Ons</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="Diensten.html" class="mobile-nav-link">
+                        <i class="fas fa-spa"></i>
+                        <span>Diensten</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="contact.html" class="mobile-nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Divider -->
+        <div class="mobile-menu-divider"></div>
+
+        <!-- Mobile Language Section -->
+        <div class="mobile-language-section">
+            <h3 class="mobile-lang-heading">Kies Taal</h3>
+            <div class="mobile-lang-buttons">
+                <button class="mobile-lang-btn active" data-lang="nl">
+                    <span class="lang-emoji">🇳🇱</span>
+                    <span class="lang-label">Nederlands</span>
+                </button>
+                <button class="mobile-lang-btn" data-lang="en">
+                    <span class="lang-emoji">🇬🇧</span>
+                    <span class="lang-label">English</span>
+                </button>
+                <button class="mobile-lang-btn" data-lang="de">
+                    <span class="lang-emoji">🇩🇪</span>
+                    <span class="lang-label">Deutsch</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Social Section -->
+        <div class="mobile-social-section">
+            <div class="mobile-social-links">
+                <a href="#" class="mobile-social-icon" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="mobile-social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="mobile-social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Footer -->
+        <div class="mobile-menu-footer">
+            <p class="mobile-copyright">&copy; 2026 Olive Tree. Alle rechten voorbehouden.</p>
+            <p class="mobile-contact-info">+31 (0)6 1234 5678</p>
+        </div>
+    </div>
+
+    <section class="contact-hero">
+    <div class="contact-hero-inner">
+        <h1>Contact & Intake</h1>
+        <p>Plan uw eerste gesprek of stel uw vraag via onderstaand formulier</p>
+    </div>
+</section>
+
+<section class="contact-layout">
+
+    <!-- LEFT SIDE – PRAKTIJKGEGEVENS -->
+    <div class="contact-info">
+
+        <h2>Praktijkgegevens</h2>
+
+        <div class="info-block">
+            <h4>Olive Tree Psychologie Praktijk</h4>
+            <p>Kerkstraat 12<br>
+            1234 AB Amsterdam</p>
+        </div>
+
+        <div class="info-block">
+            <p><strong>Telefoon:</strong> +31 (0)6 1234 5678</p>
+            <p><strong>E-mail:</strong> info@olivetree.nl</p>
+        </div>
+
+        <div class="info-block">
+            <p><strong>KvK:</strong> 12345678</p>
+            <p><strong>BIG-registratie:</strong> 19999999999</p>
+            <p><strong>AGB-code praktijk:</strong> 94000000</p>
+        </div>
+
+        <div class="info-block">
+            <h4>Openingstijden</h4>
+            <p>Ma – Vr: 09:00 – 18:00</p>
+            <p>Zaterdag: Op afspraak</p>
+        </div>
+
+        <div class="privacy-note">
+            <p>Uw gegevens worden vertrouwelijk behandeld conform de AVG (Algemene Verordening Gegevensbescherming).</p>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE – UITGEBREID INTAKE FORMULIER -->
+    <div class="contact-form-wrapper">
+
+        <h2>Online Intake & Aanmelding</h2>
+
+        <form class="intake-form">
+
+            <!-- NAW -->
+            <div class="form-row">
+                <input type="text" placeholder="Voornaam" required>
+                <input type="text" placeholder="Achternaam" required>
+            </div>
+
+            <div class="form-row">
+                <input type="text" placeholder="Straat + Huisnummer" required>
+                <input type="text" placeholder="Postcode" required>
+                <input type="text" placeholder="Woonplaats" required>
+            </div>
+
+            <!-- PERSOONLIJK -->
+            <div class="form-row">
+                <input type="date" required>
+                <input type="tel" placeholder="Telefoonnummer" required>
+                <input type="email" placeholder="E-mailadres" required>
+            </div>
+
+            <!-- VOORKEUREN -->
+            <div class="form-row">
+                <select required>
+                    <option value="">Taalvoorkeur</option>
+                    <option>Nederlands</option>
+                    <option>English</option>
+                    <option>Deutsch</option>
+                </select>
+
+                <select required>
+                    <option value="">Locatievoorkeur</option>
+                    <option>Amsterdam</option>
+                    <option>Online</option>
+                </select>
+            </div>
+
+            <!-- ZORGVERZEKERING -->
+            <div class="form-row">
+                <input type="text" placeholder="Naam zorgverzekering" required>
+                <input type="text" placeholder="Polisnummer" required>
+            </div>
+
+            <!-- VERWIJZING -->
+            <div class="form-group">
+                <label>Heeft u een verwijzing van uw huisarts?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="verwijzing" required> Ja</label>
+                    <label><input type="radio" name="verwijzing"> Nee</label>
+                </div>
+            </div>
+
+            <!-- REDEN -->
+            <div class="form-group">
+                <label>Reden van aanmelding / hulpvraag</label>
+                <textarea rows="5" placeholder="Omschrijf kort uw hulpvraag..." required></textarea>
+            </div>
+
+            <!-- AVG -->
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" required>
+                    Ik ga akkoord met het privacybeleid en verwerking van mijn persoonsgegevens.
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Intake Aanvraag Verzenden
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ============================================
+     ULTRA PREMIUM FOOTER
+============================================ -->
+<footer class="footer">
+
+    <!-- SUBTLE TOP GLOW -->
+    <div class="footer-glow"></div>
+
+    <div class="footer-container">
+
+        <!-- BRAND -->
+        <div class="footer-column footer-brand">
+            <div class="footer-logo">
+                <div class="footer-logo-icon">🍃</div>
+                <div>
+                    <h3>Olive Tree</h3>
+                    <p>Psychologie Praktijk</p>
+                </div>
+            </div>
+
+            <p class="footer-description">
+                Professionele en persoonlijke psychologische begeleiding in een veilige, warme en vertrouwde omgeving.
+            </p>
+
+            <!-- MAP -->
+            <div class="footer-map">
+                <iframe 
+                    src="https://www.google.com/maps?q=Amsterdam&output=embed"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- NAVIGATIE -->
+        <div class="footer-column">
+            <h4>Navigatie</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overons.html">Over Ons</a></li>
+                <li><a href="diensten.html">Diensten</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- OPENINGSTIJDEN -->
+        <div class="footer-column">
+            <h4>Openingstijden</h4>
+            <ul class="footer-hours">
+                <li><span>Ma - Vr</span> 09:00 – 18:00</li>
+                <li><span>Zaterdag</span> Op afspraak</li>
+                <li><span>Zondag</span> Gesloten</li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+                <li>📍 Kerkstraat 12, 1234 AB Amsterdam</li>
+                <li>📞 +31 (0)6 1234 5678</li>
+                <li>✉️ info@olivetree.nl</li>
+            </ul>
+
+            <div class="footer-social">
+                <a href="#">f</a>
+                <a href="#">in</a>
+                <a href="#">ig</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Olive Tree Psychologie Praktijk | Alle rechten voorbehouden</p>
+        <div class="footer-legal">
+            <a href="#">Privacybeleid</a>
+            <a href="#">Algemene Voorwaarden</a>
+        </div>
+    </div>
+
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
